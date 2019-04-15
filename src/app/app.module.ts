@@ -6,12 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import {
-  MatButtonModule,
-  MatCardModule,
-  MatExpansionModule,
-  MatInputModule,
-  MatProgressSpinnerModule,
-  MatToolbarModule
+    MatButtonModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatPaginatorModule,
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -21,26 +22,28 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PostCreateComponent,
-    PostListComponent,
-    HeaderComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatExpansionModule,
-    MatProgressSpinnerModule,
-    HttpClientModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PostCreateComponent,
+        PostListComponent,
+        HeaderComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatInputModule,
+        MatCardModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatExpansionModule,
+        MatProgressSpinnerModule,
+        MatPaginatorModule,
+        HttpClientModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
